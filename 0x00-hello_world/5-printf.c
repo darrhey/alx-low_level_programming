@@ -1,7 +1,9 @@
 #include<stdio.h>
+
 /**
- * Accepts no argument and return 0
- * Only prints the strings in printf function
+ * main - Program entry point
+ *
+ * Return: 0 0n success. Error code otherwise
  */
 int main(void)
 {
