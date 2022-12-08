@@ -7,11 +7,6 @@
  */
 int main(void)
 {
-int i;
-char c;
-long int li;
-long long int lli;
-float f;
-fprintf("and that piece of art is useful\" - Dora Korpar, 2015-10-19");
+fprintf(stderr, "and that piece of art is useful\" - Dora Korpar, 2015-10-19");
 return (0);
 }
