@@ -9,16 +9,17 @@ int main(void)
 int a;
 for (a = 0; a <= 9; a++)
 {
+putchar(48 + a);
 if (a < 9)
 {
-putchar(48 + a);
 putchar(',');
 putchar(' ');
 }
 else
 {
-putchar(48 + a);
+break;
 }
 }
+putchar('\n');
 return (0);
 }
