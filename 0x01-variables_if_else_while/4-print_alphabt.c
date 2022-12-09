@@ -9,9 +9,9 @@ int main(void)
 char a;
 for (a = 'a'; a <= 'z'; a++)
 {
-if ((c == 'e') || (c == 'q'))
+if ((a == 'e') || (a == 'q'))
 {
-c += 1;
+a += 1;
 }
 else
 {
