@@ -4,14 +4,13 @@
  *
  * Return: 0 on success. Error code otherwise
  */
-int main()
+int main(void)
 {
-  int num;
-  num = 0;
-  while (num<10){
-    putchar(num);
-    num +=1;
-  }
-  putchar('\n');
-  return (0);
+char a;
+for (a = '0'; a <= '9'; a++)
+{
+putchar(a)
+}
+putchar('\n');
+return (0);
 }
