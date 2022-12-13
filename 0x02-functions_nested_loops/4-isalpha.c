@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include<ctype.h>
 #include "main.h"
 /**
  * declaration of function that checks for alphabet character _isalpha to return 1.
