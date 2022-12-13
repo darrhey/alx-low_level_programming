@@ -24,7 +24,6 @@ _putchar((p % 10) + 48);
 }
 else
 {
-_putchar(' ');
 _putchar(p + 48);
 }
 if (m < 9)
