@@ -7,21 +7,41 @@
 
 void print_to_98(int n)
 {
-char buf[] = n
-  if (buf <  98)
+if (n <  98)
 {
-while (buf <= 98)
+while (n <= 98)
 {
-write(1, buf, 3);
-buf++;
+if (n < 10){
+_putchar(n+48);
+}
+else
+{
+_putchar(n/10 + 48);
+_putchar(n%10 + 48);
+}
+_putchar(',');
+_putchar(' ');
+n++;
 }
 }
 else
 {
-while (buf >= 98)
+while (n >= 98)
 {
-write(1, buf, 3);
-buf--;
+if (n >= 100)
+{
+_putchar(n/100 + 48);
+_putchar((n%100)/10 + 48);
+_putchar((n%100)%10 + 48);
+}
+else
+{
+_putchar(n/10 + 48);
+_putchar(n%10 + 48);
+}
+_putchar(',');
+_putchar(' ');
+n++;
 }
 }
 }
