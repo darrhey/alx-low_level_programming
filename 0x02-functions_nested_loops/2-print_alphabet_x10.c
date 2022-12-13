@@ -13,7 +13,7 @@ int repeat_times;
 repeat_times = 0;
 while (repeat_times < 10)
 {
-for (letter = 97; letter <= 122; letter++)
+for (letter = 'a'; letter <= 'z'; letter++)
 {
 _putchar(letter);
 }
