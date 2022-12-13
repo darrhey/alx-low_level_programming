@@ -7,6 +7,7 @@
 
 int _abs(int)
 {
-return abs(int);
+int n;
+return abs(n);
 }
 
