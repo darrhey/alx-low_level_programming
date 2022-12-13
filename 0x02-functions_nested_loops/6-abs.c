@@ -2,9 +2,7 @@
 #include<stdlib.h>
 #include "main.h"
 /**
- * declaration of function that checks for alphabet characters.
- *
- * Return: 1 if lowercase but 0 if otherwise.
+ * _abs - Takes any integer to return its absolute
  */
 
 int _abs(int)
