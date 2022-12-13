@@ -5,6 +5,7 @@
  * _islower - Check if entered value is lowercase or upper
  *
  * Return: 1 if lowercase but 0 if otherwise.
+ * Description: c is checked if lower case to return 1.
  */
 
 int _islower(int c)
