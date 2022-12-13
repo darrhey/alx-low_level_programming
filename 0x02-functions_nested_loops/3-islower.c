@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include<ctype.h>
 #include "main.h"
 /**
  * declaration of function _islower.
