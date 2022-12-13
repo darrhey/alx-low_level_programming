@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include "main.h"
 /**
- * @n: Integer value parameter 
+ * @n: Integer value parameter
  * _abs - Takes any integer to return its absolute
  *
  *Return: Absolute of the entered value.
