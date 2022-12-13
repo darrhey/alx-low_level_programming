@@ -12,8 +12,8 @@ int count;
 count = 0;
 while (count < 26)
 {
-_putchar(98 + count);
+_putchar(97 + count);
 count += 1;
 }
-_putchar(98 + count);
+_putchar("\n");
 }
