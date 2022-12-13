@@ -7,20 +7,21 @@
 
 void print_to_98(int n)
 {
-if (n < 98)
+char buf[] = n
+  if (buf <  98)
 {
-while (n <= 98)
+while (buf <= 98)
 {
-write(1, &n, 3);
-n++;
+write(1, buf, 3);
+buf++;
 }
 }
 else
 {
-while (n >= 98)
+while (buf >= 98)
 {
-write(1, &n, 3);
-n--;
+write(1, buf, 3);
+buf--;
 }
 }
 }
