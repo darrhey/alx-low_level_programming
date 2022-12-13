@@ -2,7 +2,7 @@
 #include<ctype.h>
 #include "main.h"
 /**
- * declaration of function _islower.
+ * _islower - Check if entered value is lowercase or upper
  *
  * Return: 1 if lowercase but 0 if otherwise.
  */
