@@ -7,7 +7,7 @@
  * Return 0 on success and otherwise if error.
  */
 
-int main(void)
+int main()
 {
 int three;
 int five;
