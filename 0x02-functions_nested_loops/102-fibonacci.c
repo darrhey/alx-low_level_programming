@@ -8,7 +8,7 @@
  * Return 0 on success and otherwise if error.
  */
 
-long unsigned int main(void)
+int main(void)
 {
 long unsigned int num1;
 long unsigned int num2;
