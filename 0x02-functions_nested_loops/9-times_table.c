@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include "main.h"
 /**
- * 
+ *
  */
 
 void times_table(void)
@@ -22,7 +22,7 @@ if (p >= 10)
 _putchar((p / 10) + 48);
 _putchar((p % 10) + 48);
 }
-else if (p == 0)
+else if (m == 0)
 {
 _putchar(p + 48);
 }
