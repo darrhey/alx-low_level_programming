@@ -17,7 +17,7 @@ m = 0;
 while (m <= n)
 {
 p = a *m;
-else if ((p >= 100)
+if (p >= 100)
 {
 _putchar((p / 100) + 48);
 _putchar(((p % 100) / 10) + 48);
