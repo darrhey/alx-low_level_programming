@@ -16,7 +16,7 @@ while (n <= 9)
 m = 0;
 while (m <= 9)
 {
-p = n * m;
+p = n *m;
 if (p >= 10)
 {
 _putchar((p / 10) + 48);
@@ -39,6 +39,6 @@ _putchar(' ');
 m++;
 }
 _putchar('\n');
-n++;  
+n++;
 }
 }
