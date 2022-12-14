@@ -26,5 +26,6 @@ num2 = num3;
 printf(", %lu", num3);
 item--;
 }
+printf("\n");
 return (0);
 }
