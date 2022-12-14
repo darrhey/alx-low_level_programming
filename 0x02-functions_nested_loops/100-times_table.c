@@ -17,16 +17,8 @@ m = 0;
 while (m <= n)
 {
 p = a *m;
-if (p >= 1000)
+else if ((p >= 100)
 {
-_putchar((p/1000) + 48);
-_putchar(((p % 1000) / 100) + 48);
-_putchar((((p % 1000) % 100) / 10) + 48);
-_putchar((((p % 1000) % 100) % 10) + 48);
-}
-else if ((p >= 100) && (p < 1000))
-{
-_putchar(' ');
 _putchar((p / 100) + 48);
 _putchar(((p % 100) / 10) + 48);
 _putchar(((p % 100) % 10) + 48);
@@ -38,13 +30,11 @@ _putchar(p + 48);
 else if ((p < 100) && (p >= 10))
 {
 _putchar(' ');
-_putchar(' ');
 _putchar((p / 10) + 48);
 _putchar((p % 10) + 48);
 }
 else
 {
-_putchar(' ');
 _putchar(' ');
 _putchar(' ');
 _putchar(p + 48);
