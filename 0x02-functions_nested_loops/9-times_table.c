@@ -22,8 +22,13 @@ if (p >= 10)
 _putchar((p / 10) + 48);
 _putchar((p % 10) + 48);
 }
+else if (p == 0)
+{
+_putchar(p + 48);
+}
 else
 {
+_putchar(' ');
 _putchar(p + 48);
 }
 if (m < 9)
