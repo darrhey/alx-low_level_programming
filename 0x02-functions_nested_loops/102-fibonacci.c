@@ -23,7 +23,7 @@ while (item > 0)
 num3 = num1 + num2;
 num1 = num2;
 num2 = num3;
-printf(", %u", num3);
+printf(", %ul", num3);
 item--;
 }
 return (0);
