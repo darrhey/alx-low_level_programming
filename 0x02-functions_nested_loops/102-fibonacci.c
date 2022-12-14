@@ -10,15 +10,15 @@
 
 int main(void)
 {
-long unsigned int num1;
-long unsigned int num2;
-long unsigned int num3;
-long unsigned int item;
+unsigned long int num1;
+unsigned long int num2;
+unsigned long int num3;
+unsigned long int item;
 num1 = 1;
 num2 = 2;
 item = 50;
 printf("%lu, %lu", num1, num2);
-while (item > 0)
+while (item > 2)
 {
 num3 = num1 + num2;
 num1 = num2;
