@@ -18,9 +18,9 @@ unsigned long int sum;
 num1 = 1;
 num2 = 2;
 max = 4000000;
-sum = 2;
 while (num3 < max)
 {
+sum = 2;
 num3 = num1 + num2;
 num1 = num2;
 num2 = num3;
