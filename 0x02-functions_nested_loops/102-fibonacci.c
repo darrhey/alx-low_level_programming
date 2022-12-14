@@ -17,12 +17,13 @@ int item;
 num1 = 1;
 num2 = 2;
 item = 50;
+printf("%d, %d", num1, num2);
 while (item > 0)
 {
 num3 = num1 + num2;
 num1 = num2;
 num2 = num3;
-printf("%d, ",num3);
+printf(", %d",num3);
 item--;
 }
 return (0);
