@@ -21,7 +21,11 @@ sum_of_3 = 0;
 sum_of_5 = 0;
 total = 0;
 while (three < 1024)
-{sum_of_3 += three;
+{
+if ((three % 5) != 0)
+{
+sum_of_3 += three;
+}
 three += 3;
 }
 while (five < 1024)
