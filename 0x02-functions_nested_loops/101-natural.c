@@ -34,6 +34,6 @@ sum_of_5 += five;
 five += 5;
 }
 total = sum_of_3 + sum_of_5;
-printf("%d", total);
+printf("%d\n", total);
 return (0);
 }
