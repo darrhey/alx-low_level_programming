@@ -8,8 +8,12 @@
 void more_numbers(void)
 {
 int count;
+int times;
+times = 0;
+while (times <= 14)
+{
 count = 0;
-while (count <= 14)
+while (count < 10)
 {
 if (count >= 10)
 {
@@ -19,7 +23,10 @@ _putchar((count % 10) + 48);
 else
 {
 _putchar(count + 48);
+}
+_putchar('\n');
 count += 1;
 }
+times += 1;
 }
 }
