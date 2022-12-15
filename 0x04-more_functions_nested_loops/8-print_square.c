@@ -19,6 +19,7 @@ while (b < size)
 _putchar(35);
 b += 1;
 }
+_putchar('\n');
 a += 1;
 }
 _putchar('\n');
