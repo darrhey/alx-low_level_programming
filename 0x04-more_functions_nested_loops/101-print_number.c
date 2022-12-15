@@ -13,7 +13,7 @@ int m;
 m = abs(n);
 if (n < 0)
 {
-_putchar(45);
+_putchar('-');
 }
 if (m >= 1000)
 {
