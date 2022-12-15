@@ -1,7 +1,7 @@
 #include <unistd.h>
 #include "main.h"
 /**
- * print_numbers - draws a straight line in the terminal
+ * print_line - draws a straight line in the terminal
  * @n: parameter for number of lines
  * Return: 0 on success. Error code otherwise
  */
@@ -14,4 +14,5 @@ _putchar(95);
 n -= 1;
 }
 _putchar('\n');
+return (0);
 }
