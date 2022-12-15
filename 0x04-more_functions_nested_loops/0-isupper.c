@@ -2,7 +2,7 @@
 #include<ctype.h>
 #include "main.h"
 /**
- * _islower - returns 1 if parameter entered upper
+ * _isupper - returns 1 if parameter entered is upper
  * @c: the parameter to be checked
  * Return: 1 if upper but 0 if otherwise
  */
