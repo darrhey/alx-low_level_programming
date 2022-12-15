@@ -18,12 +18,8 @@ while (count <= 14)
 if (count >= 10)
 {
 _putchar((count / 10) + 48);
+}
 _putchar((count % 10) + 48);
-}
-else
-{
-_putchar(count + 48);
-}
 count += 1;
 }
 _putchar('\n');
