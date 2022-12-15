@@ -1,0 +1,25 @@
+#include <unistd.h>
+#include "main.h"
+/**
+ * print_square - prints a square, followed by a new line
+ * @size: parameter for number of square(s)
+ * Return: 0 on success. Error code otherwise
+ */
+
+void print_line(int n)
+{
+int a;
+int b;
+a = 0;
+while (a < n)
+{
+b = 0;
+while (b < n)
+{
+_putchar(35);
+b += 1;
+}
+a += 1;
+}
+_putchar('\n');
+}
