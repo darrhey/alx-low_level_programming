@@ -11,7 +11,7 @@ int count;
 count = 0;
 while (count < 10)
 {
-_putchar(48 + count);
+_putchar(count + '0');
 count += 1;
 }
 _putchar('\n');
