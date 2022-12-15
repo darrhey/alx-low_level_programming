@@ -1,9 +1,8 @@
 #include <unistd.h>
 #include "main.h"
 /**
- * print_square - prints a square, followed by a new line
+ * print_square - prints square(s), followed by new line
  * @size: parameter for number of square(s)
- * Return: 0 on success. Error code otherwise
  */
 
 void print_square(int size)
@@ -18,7 +17,7 @@ while (a < size)
 b = 0;
 while (b < size)
 {
-_putchar(35);
+_putchar('#');
 b += 1;
 }
 _putchar('\n');
