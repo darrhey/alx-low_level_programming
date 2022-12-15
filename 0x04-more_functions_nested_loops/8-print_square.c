@@ -6,15 +6,15 @@
  * Return: 0 on success. Error code otherwise
  */
 
-void print_line(int n)
+void print_square(int size)
 {
 int a;
 int b;
 a = 0;
-while (a < n)
+while (a < size)
 {
 b = 0;
-while (b < n)
+while (b < size)
 {
 _putchar(35);
 b += 1;
