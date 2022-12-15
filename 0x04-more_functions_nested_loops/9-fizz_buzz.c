@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main - Program entry point
+ * Return: 0 on success, error code if otherwise
+ */
+
 int main(void)
 {
 int num;
@@ -22,4 +27,5 @@ else
 printf("%d ", num);
 }
 }
+return (0);
 }
