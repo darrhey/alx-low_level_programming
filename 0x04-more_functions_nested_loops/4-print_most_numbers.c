@@ -14,7 +14,7 @@ while (count < 10)
 {
 if ((count != 2) || (count != 4))
 {
-_putchar(48 + count);
+_putchar(count + '0');
 }
 count += 1;
 }
