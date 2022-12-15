@@ -18,5 +18,4 @@ _putchar(count + '0');
 }
 count += 1;
 }
-_putchar('\n');
 }
