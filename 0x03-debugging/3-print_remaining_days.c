@@ -18,7 +18,7 @@ if (year % 4 == 0)
 {
 if ((month >= 2) && (days >= 60))
 {
-days++;
+days += 1;
 }
 printf("Day of the year: %d\n", days);
 printf("Remaining days: %d\n", 366 - days);
