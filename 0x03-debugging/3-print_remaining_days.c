@@ -12,20 +12,18 @@
 
 void print_remaining_days(int month, int day, int year)
 {
-int days;
-days = convert_day(month, day);
 if (year % 4 == 0)
 {
-if ((month >= 2) && (days >= 60))
+if ((month >= 2) && (day >= 60))
 {
-days += 1;
+day += 1;
 }
-printf("Day of the year: %d\n", days);
-printf("Remaining days: %d\n", 366 - days);
+printf("Day of the year: %d\n", day);
+printf("Remaining days: %d\n", 366 - day);
 }
 else
 {
-printf("Day of the year: %d\n", days);
-printf("Remaining days: %d\n", 365 - days);
+printf("Day of the year: %d\n", day);
+printf("Remaining days: %d\n", 365 - day);
 }
 }
