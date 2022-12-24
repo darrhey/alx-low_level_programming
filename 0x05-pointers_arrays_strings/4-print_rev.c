@@ -9,5 +9,18 @@
 
 void print_rev(char *s)
 {
-puts(strrev(s));
+  int lenght, a;
+  char *start, *end, str;
+  lenght = strlen(s);
+  start = s;
+  end = s;
+  for (a = 0; a < (lenght/2); a++)
+    {
+      str = *end;
+      *end = *start;
+      *start = str;
+      start++;
+      end--;
+    }
+  puts(a);
 }
