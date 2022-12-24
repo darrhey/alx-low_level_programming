@@ -10,5 +10,16 @@
 
 void rev_string(char *s)
 {
-return (strrev(s);
+int a;
+a = 0;
+while (s[a] != '\0')
+{
+a++;
+}
+char word[a];
+for (a -= 1; a >= 0; a--)
+{
+word[a] = s[a];
+}
+return (word);
 }
