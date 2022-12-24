@@ -10,16 +10,5 @@
 
 void rev_string(char *s)
 {
-int a;
-a = 0;
-while (s[a] != '\0')
-{
-a++;
-}
-char new[a-1];
-for (a -= 1; a >= 0; a--)
-{
-new[a] = s[a];
-}
-return (new);
+return (strrev(s);
 }
