@@ -11,15 +11,13 @@
 void rev_string(char *s)
 {
 int a;
-a = 0;
-while (s[a] != '\0')
+int lenght;
+int c;
+lenght = strlen(s);
+for (a = 0; a < (lenght/2); a++)
 {
-a++;
+c = s[a];
+s[a] = a[lenght-a-1];
+s[lenght-a-1] = c;
 }
-char word[a];
-for (a -= 1; a >= 0; a--)
-{
-word[a] = s[a];
-}
-return (word);
 }
