@@ -13,10 +13,10 @@ int a;
 int lenght;
 int c;
 lenght = strlen(s);
-for (a = 0; a < (lenght/2); a++)
+for (a = 0; a < (lenght / 2); a++)
 {
 c = s[a];
-s[a] = s[lenght-a-1];
-s[lenght-a-1] = c;
+s[a] = s[lenght - a - 1];
+s[lenght - a - 1] = c;
 }
 }
