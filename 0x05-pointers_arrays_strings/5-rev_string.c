@@ -5,7 +5,6 @@
 /**
  * rev_string - reverses a string
  * @s: string to be reversed
- * Return: string in reverse
  */
 
 void rev_string(char *s)
@@ -17,7 +16,7 @@ lenght = strlen(s);
 for (a = 0; a < (lenght/2); a++)
 {
 c = s[a];
-s[a] = a[lenght-a-1];
+s[a] = s[lenght-a-1];
 s[lenght-a-1] = c;
 }
 }
