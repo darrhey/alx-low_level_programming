@@ -30,7 +30,7 @@ if ((i + j) == (size - 1))
 {
 sum2 += a[k];
 }
-k++
+k++;
 }
 }
 printf("%d, %d\n", sum1, sum2);
