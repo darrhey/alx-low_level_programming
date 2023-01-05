@@ -15,5 +15,5 @@ if ((n <= 1) && (n > 0))
 {
 return (0);
 }
-return (factorial(n) * factorial(n-1);
+return (factorial(n) * factorial(n-1));
 }
