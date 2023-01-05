@@ -7,7 +7,7 @@
 
 int factorial(int n)
 {
-while (n > 0)
+if (n > 0)
 {
 if ((n <= 1) && (n > 0))
 {
