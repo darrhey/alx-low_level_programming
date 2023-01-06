@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * main - addc positivec numbers
+ * main - add positive numbers
  * @argc: argument count
  * @argcv: array of pointers to arg strings
  * Return: sum of addition or 1
@@ -19,7 +19,7 @@ sum = 0;
 for (i = 1; i < argc; i++)
 {
 num = argv[i];
- if (num <= -1) || (!(isdigit(num)))
+if (num <= -1) || (!(isdigit(num)))
 {
 printf("Error\n");
 return (1);
