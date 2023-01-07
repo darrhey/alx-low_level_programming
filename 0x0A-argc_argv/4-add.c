@@ -6,7 +6,7 @@
 /**
  * main - add positive numbers
  * @argc: argument count
- * @argcv: array of pointers to arg strings
+ * @argv: array of pointers to argument strings
  * Return: sum of addition or 1
  */
 
@@ -18,13 +18,16 @@ int num;
 sum = 0;
 for (i = 1; i < argc; i++)
 {
-num = argv[i];
+num = int argv[i];
 if (num <= -1) || (!(isdigit(num)))
 {
 printf("Error\n");
 return (1);
 }
+if (isdigit(num))
+{
 sum += num;
+}
 }
 printf("%d\n", sum);
 return (0);
