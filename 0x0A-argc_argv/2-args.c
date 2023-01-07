@@ -4,7 +4,7 @@
 /**
  * main - prints all arguments it receives
  * @argc: argument count
- * @argcv: array of pointers to arg strings
+ * @argv: array of pointers to argument strings
  * Return: 0
  */
 
