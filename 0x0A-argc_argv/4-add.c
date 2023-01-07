@@ -18,7 +18,10 @@ int num;
 sum = 0;
 for (i = 1; i < argc; i++)
 {
+if (isdigit(argv[i])
+{
 num = int argv[i];
+}
 if (num <= -1)
 {
 printf("Error\n");
