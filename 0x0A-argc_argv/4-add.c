@@ -10,7 +10,7 @@
  * Return: sum of addition or 1
  */
 
-int main(int argc, char *argv[])
+int main(int argc, int *argv[])
 {
 int sum;
 int i;
@@ -19,15 +19,12 @@ sum = 0;
 for (i = 1; i < argc; i++)
 {
 num = int argv[i];
-if (num <= -1) || (!(isdigit(num)))
+if (num <= -1)
 {
 printf("Error\n");
 return (1);
 }
-if (isdigit(num))
-{
 sum += num;
-}
 }
 printf("%d\n", sum);
 return (0);
