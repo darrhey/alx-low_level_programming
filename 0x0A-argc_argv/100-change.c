@@ -6,7 +6,7 @@
  * main - prints the min number of coins to make
  *change for a given amount
  * @argc: argument count
- * @argcv: array of pointers to arg strings
+ * @argv: array of pointers to argument strings
  * Return: amount of cents or 1
  */
 
@@ -19,38 +19,33 @@ if (argc != 2)
 printf("Error\n");
 return (1);
 }
-coins = atoi(argv[1]);
-cents = 0;
+coins = atoi(argv[1]), cents = 0;
 if (coins > 25)
 {
 while (coins >= 25)
 {
-coins -= 25;
-cents++;
+coins -= 25, cents++;
 }
 }
 if ((coins > 10) && (coins < 25))
 {
 while (coins >= 10)
 {
-coins -= 10;
-cents++;
+coins -= 10, cents++;
 }
 }
 if ((coins > 5) && (coins < 10))
 {
 while (coins >= 5)
 {
-coins -= 5;
-cents++;
+coins -= 5, cents++;
 }
 }
 if ((coins > 2) && (coins < 5))
 {
 while (coins >= 2)
 {
-coins -= 2;
-cents++;
+coins -= 2, cents++;
 }
 }
 if ((coins == 1) || (coins == 2) || (coins == 5) || (coins == 10) || (coins == 25))
