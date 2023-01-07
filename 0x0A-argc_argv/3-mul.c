@@ -5,7 +5,7 @@
 /**
  * main - prints products of two numbers
  * @argc: argument count
- * @argcv: array of pointers to arg strings
+ * @argv: array of pointers to argument strings
  * Return: 0
  */
 
@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 int product;
 if (argc <= 1)
 {
-printf("Error\n")
+printf("Error\n");
 return (1);
 }
 else
