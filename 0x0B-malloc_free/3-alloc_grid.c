@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * **aloc_grid - returns a pointer to a 2c dim array of integers
+ * **aloc_grid - allocate memory to grid
  * @width: column of array
  * @height: rows of array
  * Return: a pointer to 2D array of int
@@ -30,7 +30,7 @@ if (p[i] == NULL)
 for (j = 0; j < i; j++)
 {
 free(p[j]);
-free (p);
+free(p);
 return (NULL);
 }
 for (j = 0; j < width; j++)
