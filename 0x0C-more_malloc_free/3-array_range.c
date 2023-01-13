@@ -15,7 +15,6 @@ int *p;
 int r;
 r = max - min;
 int i;
-i = 0;
 if (min > max)
 {
 return (NULL);
@@ -25,6 +24,7 @@ if (p == NULL)
 {
 return (NULL);
 }
+i = 0;
 while (min <= max)
 {
 p[i] = min;
