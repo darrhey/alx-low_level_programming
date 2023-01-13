@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 #include "main.h"
 /**
@@ -11,15 +12,15 @@
 int *array_range(int min, int max)
 {
 int *p;
-int range;
-range = max - min;
+int r;
+r = max - min;
 int i;
 i = 0;
 if (min > max)
 {
 return (NULL);
 }
-p = malloc(sizeof(int) * (range + 1));
+p = malloc(sizeof(int) * (r + 1));
 if (p == NULL)
 {
 return (NULL);
