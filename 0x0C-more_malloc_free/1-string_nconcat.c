@@ -28,7 +28,7 @@ s2 = "";
 }
 for (i = 0; i < n; i++)
 {
-q =  strncat(dest, s1[i]);
+q =  strcat(dest, s2[i]);
 }
 p = strcat(s1, q);
 return (p);
