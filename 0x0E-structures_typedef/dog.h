@@ -1,7 +1,6 @@
 #ifndef DOG_H
 #define DOG_H
 
-#include <string.h>
 
 /**
  * struct dog - cntains all the features of dog
@@ -29,6 +28,5 @@ void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
 void free_dog(dog_t *d);
 
-int _putchar(char c);
 
-#endif /* MAIN_H */
+#endif
