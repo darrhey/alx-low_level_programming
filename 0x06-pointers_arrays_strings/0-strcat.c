@@ -1,5 +1,5 @@
 #include <unistd.h>
-#include<ctype.h>
+#include <ctype.h>
 #include "main.h"
 /**
  * *_strcat - concatenates two strings
@@ -10,13 +10,13 @@
 
 char *_strcat(char *dest, char *src)
 {
-  int s1;
-  int s2;
-  int t;
-  s1 = strlen(dest);
-  s2 = strlen(src);
-  t = s1 + s2;
-  char dest[t];
-  strcat(dest, src);
-  return (*dest);
+int i = 0;
+int len1 = 0;
+while (dest[i])
+len1++;
+for (i = 0; src[i]; i++)
+{
+dest[len++] = src[i];
+}
+return (dest);
 }
