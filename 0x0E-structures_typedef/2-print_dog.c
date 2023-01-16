@@ -33,8 +33,4 @@ else
 printf("Owner: %c\n",d->owner);
 }
 }
-else
-{
-return;
-}
 }
