@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include "dog.h"
 
 /**
@@ -8,6 +9,8 @@
  **/
 
 void print_dog(struct dog *d)
+{
+if (d != NULL)
 {
 if ((*d).name == NULL)
 {
@@ -33,5 +36,9 @@ else
 {
 printf("Owner: %c\n",d->owner);
 }
+}
+else
+{
+return;
 }
 }
