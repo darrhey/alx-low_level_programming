@@ -6,8 +6,10 @@
 
 void print_dog(struct dog *d)
 {
-if (*d != NULL)
+if (*d == NULL)
 {
+  return;
+ }
 if ((*d).name == NULL)
 {
 printf("Name: (nil)\n");
@@ -31,6 +33,5 @@ printf("Owner: (nil)\n");
 else
 {
 printf("Owner: %c\n",d->owner);
-}
 }
 }
