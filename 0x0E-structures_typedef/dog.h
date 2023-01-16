@@ -1,5 +1,7 @@
 #include "main.h"
 
+#include <string.h>
+
 /**
  * struct dog - cntains all the features of dog
  * name - feature of char* type
