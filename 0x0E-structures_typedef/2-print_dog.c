@@ -1,3 +1,6 @@
+#include <stdlib.h>
+#incclude "dog.h"
+
 /**
  * print_dog - prints a struct dog
  * @d - struct type
