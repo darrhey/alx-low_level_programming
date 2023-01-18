@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
 #include <udis86.h>
 
@@ -9,10 +10,10 @@
  *
  * Return: 0
  **/
-int main(int argc, char *argv[])
+int main(int argc, char argv[])
 {
 ud_t ud_obj;
-int i = 0;
+int i;
 if (argc == 2)
 {
 i = atoi(argv[1]);
@@ -21,6 +22,7 @@ if (i < 0)
 printf("Error\n");
 exit(2);
 }
+ 
 ud_unit(&ud_obj);
 ud_set_input_file(&ud_obj, argv[1], i);
 ud_set_mode(&ud_obj, 64);
