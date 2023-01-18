@@ -27,7 +27,7 @@ ud_set_mode(&ud_obj, 64);
 ud_set_syntax(&ud_obj, UD_SYN_INTEL);
 while (ud_disassemble(&ud_obj))
 {
-printf("\t%s\n", ud_insn_asm(&ud_obj));
+printf("\t %s\n", ud_insn_hex(&ud_obj));
 }
 }
 return (0);
