@@ -13,7 +13,7 @@ if (f != NULL)
 {
 if (name != NULL)
 {
-return (f(name));
+f(name);
 }
 }
 }
