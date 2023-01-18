@@ -5,6 +5,7 @@
  * print_name - prints a name
  * @name - char * type
  * @f - function pointer type
+ * Return: nothing
  **/
 
 void print_name(char *name, void (*f)(char *))
