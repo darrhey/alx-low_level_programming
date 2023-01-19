@@ -17,14 +17,12 @@ if (n == 0)
 return (0);
 } 
 va_start(ap, n);
-
 int sum = 0;
-int i;
+unsigned int i;
 for (i = 0; i < n; i++)
 {
 sum += va_arg(ap, int);
 }
-
 va_end(ap);
 return (sum);
 }
