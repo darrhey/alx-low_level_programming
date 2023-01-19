@@ -1,4 +1,5 @@
 #include <stdarg.h>
+#include "variable_functions.h"
 
 /**
  * sum_them_all - returns the sum of all parameters
