@@ -17,7 +17,7 @@ va_list list;
 
 va_start(list, n);
 
-int i;
+unsigned int i;
 for (i = 0; i < n; i++)
 {
 add += va_arg(list, int);
