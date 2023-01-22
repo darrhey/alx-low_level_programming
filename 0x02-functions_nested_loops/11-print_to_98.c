@@ -2,7 +2,8 @@
 #include<stdlib.h>
 #include "main.h"
 
-/** print_to_98 - prints all natural numbers from n to 98
+/** 
+ * print_to_98 - prints all natural numbers from n to 98
  * @n: integer type
  * Return: nothing
  */
@@ -19,8 +20,8 @@ _putchar(n + '0');
 }
 else
 {
-_putchar((n/10) + '0');
-_putchar((n%10) + '0');
+_putchar((n / 10) + '0');
+_putchar((n % 10) + '0');
 }
 _putchar(',');
 _putchar(' ');
