@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * print_sign - Checks for value signs.
- *
+ * @n: integer type to be checked
  * Return: 1 for positive, 0 for zero and -1 for negative.
  */
 
