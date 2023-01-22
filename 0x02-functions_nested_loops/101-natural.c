@@ -5,7 +5,9 @@
 /**
  * Main - Program entry point
  *
- * Return 0 on success and otherwise if error.
+ * Return: 0 on success and otherwise if error
+ * Description: this prints the sum of all the multiples
+ * of 3 and 5 below 1024
  */
 
 int main(void)
