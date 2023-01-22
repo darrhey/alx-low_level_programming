@@ -3,7 +3,8 @@
 #include<stdlib.h>
 #include "main.h"
 /**
- * Main - Program entry point
+ * Main - this program prints the sum of all the multiples
+ * of 3 and 5 below 1024
  *
  * Return: 0 on success and otherwise if error
  * Description: this prints the sum of all the multiples
