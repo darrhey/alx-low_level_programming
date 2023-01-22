@@ -2,7 +2,9 @@
 #include<stdlib.h>
 #include "main.h"
 /**
- *
+ * print_times_table - prints the n times table
+ * @n: integer type
+ * Return: nothing
  */
 
 void print_times_table(int n)
@@ -16,7 +18,7 @@ while (a <= n)
 m = 0;
 while (m <= n)
 {
-p = a *m;
+p = a * m;
 if (p >= 100)
 {
 _putchar((p / 100) + 48);
