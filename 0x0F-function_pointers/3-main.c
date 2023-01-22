@@ -24,7 +24,7 @@ if (get_op_func(op) == NULL)
 {
 printf("Error\n");
 }
-if ((*op == "/" && j == 0) || (*op == "%" && j == 0))
+if ((op == "/" && j == 0) || (op == "%" && j == 0))
 {
 printf("Error\n");
 }
