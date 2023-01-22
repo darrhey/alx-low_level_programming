@@ -10,11 +10,11 @@
 
 int main(void)
 {
-unsigned long int num1;
-unsigned long int num2;
-unsigned long int num3;
-unsigned long int max;
-unsigned long int sum;
+unsigned long long int num1;
+unsigned long long int num2;
+unsigned long long int num3;
+unsigned long long int max;
+unsigned long long int sum;
 num1 = 1;
 num2 = 2;
 max = 4000000;
