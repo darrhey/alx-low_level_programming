@@ -1,9 +1,10 @@
 #include <unistd.h>
 #include "main.h"
 /**
- * declaring a void function
+ * print_alphabet_x10 - prints 10 times the alphabet
+ * in lowercase, followed by a new line
  *
- * Return: 0 on success. Error code otherwise
+ * Return: nothing
  */
 
 void print_alphabet_x10(void)
