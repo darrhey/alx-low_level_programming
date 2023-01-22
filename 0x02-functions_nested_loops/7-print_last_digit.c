@@ -2,7 +2,9 @@
 #include<stdlib.h>
 #include "main.h"
 /**
- * print_last_digit - Takes any integer to return its last digit.
+ * print_last_digit - prints last digit of a number
+ * @n: integer type
+ * Return: value of the last digit
  */
 
 int print_last_digit(int n)
@@ -12,4 +14,3 @@ last = n % 10;
 _putchar('0' + last);
 return (last);
 }
-
