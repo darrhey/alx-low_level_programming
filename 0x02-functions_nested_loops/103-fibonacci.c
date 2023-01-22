@@ -29,6 +29,6 @@ if ((num3 % 2) == 0)
 sum += num3;
 }
 }
-printf("%lu\n", sum);
+printf("%llu\n", sum);
 return (0);
 }
