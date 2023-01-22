@@ -20,6 +20,7 @@ while (b <= 9)
 c = 0;
 while (c <= 5)
 {
+d = 0;
 while (d <= 9)
 {
 _putchar('0' + a);
