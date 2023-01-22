@@ -2,9 +2,9 @@
 #include<ctype.h>
 #include "main.h"
 /**
- * declaration of function that checks for alphabet characters.
- *
- * Return: 1 if lowercase but 0 if otherwise.
+ * _isalpha - checks for alphabetic character
+ * @c: integer type to be checked
+ * Return: 1 if lowercase 0 if otherwise.
  */
 
 int _isalpha(int c)
