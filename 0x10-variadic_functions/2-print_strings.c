@@ -21,7 +21,7 @@ for (i = 0; i < n; i++)
 j = va_arg(list, char *);
 if (j != NULL)
 {
-printf("%d", j);
+printf("%s", j);
 }
 else
 {
