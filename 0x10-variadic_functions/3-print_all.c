@@ -12,12 +12,12 @@
 
 void print_all(const char * const format, ...)
 {
-va_list list;
 int i, j;
+char *str, *separator;
 i = 0;
 j = 0;
-char *separator = ", ";
-char *str;
+separator = ", ";
+va_list list;
 va_start(list, format);
 while (format && format[i])
 i++;
