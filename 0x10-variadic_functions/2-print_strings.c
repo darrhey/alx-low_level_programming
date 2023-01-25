@@ -18,8 +18,8 @@ va_list list;
 va_start(list, n);
 for (i = 0; i < n; i++)
 {
-j = va_arg(list, int);
- if (strcmp(j, NULL) != 0)
+j = va_arg(list, char *);
+if (j != NULL)
 {
 printf("%d", j);
 }
