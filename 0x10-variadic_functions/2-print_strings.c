@@ -19,7 +19,7 @@ va_start(list, n);
 for (i = 0; i < n; i++)
 {
 j = va_arg(list, int);
-if (j != NULL)
+ if (strcmp(j, NULL) != 0)
 {
 printf("%d", j);
 }
