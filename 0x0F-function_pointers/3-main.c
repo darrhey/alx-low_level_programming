@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 #include "3-calc.h"
 
@@ -26,7 +27,7 @@ if (get_op_func(op) == NULL)
 printf("Error\n");
 exit(1);
 }
-if (((op == "/") && (j == 0)) || ((op == "%") && (j == 0)))
+ if (((strcmp(op, "/") == 0) && (j == 0)) || ((strcmp(op, "%") == 0) && (j == 0)))
 {
 printf("Error\n");
 exit(2);
