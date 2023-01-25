@@ -3,8 +3,8 @@
 
 /**
  * print_name - prints a name
- * @name - name
- * @f - function to print name as upper or not
+ * @name: name
+ * @f: function to print name as upper or not
  * Return: void
  **/
 
