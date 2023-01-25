@@ -3,8 +3,7 @@
 
 /**
  * sum_them_all - returns the sum of all parameters
- * @n - const unsigned integer type
- * @... - elipsis
+ * @n: const unsigned integer type
  *
  * Return: sum of all parameter but 0 if n is 0;
  **/
@@ -12,9 +11,10 @@
 int sum_them_all(const unsigned int n, ...)
 {
 int add = 0;
+int i;
 va_list list;
 va_start(list, n);
-for (unsigned int i = 0; i < n; i++)
+for (i = 0; i < n; i++)
 {
 add += (va_arg(list, int));
 }
