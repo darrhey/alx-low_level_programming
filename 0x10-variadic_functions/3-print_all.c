@@ -5,7 +5,7 @@
 /**
  * print_all - prints any value
  * c = char, i = int, f = float, s = char *, NULL = (nil)
- * @format - argument type
+ * @format: argument type
  *
  * Return: nothing;
  **/
@@ -13,11 +13,12 @@
 void print_all(const char * const format, ...)
 {
 int i, j;
-char *str, *separator;
+char *separator;
 i = 0;
 j = 0;
 separator = ", ";
 va_list list;
+char *str;
 va_start(list, format);
 while (format && format[i])
 i++;
