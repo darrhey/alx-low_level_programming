@@ -3,9 +3,9 @@
 
 /**
  * print_name - prints a name
- * @name - char * type
- * @f - function pointer type
- * Return: nothing
+ * @name - name
+ * @f - function to print name as upper or not
+ * Return: void
  **/
 
 void print_name(char *name, void (*f)(char *))
