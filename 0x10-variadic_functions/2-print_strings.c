@@ -3,7 +3,7 @@
 #include "variadic_functions.h"
 
 /**
- * print_strings - prints strings, followed by a new line
+ * print_strings - print strings, followed by a new line
  * @separator: const char type
  * @n: const unsigned integer type
  *
@@ -13,21 +13,23 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 unsigned int i;
-char *j;
+char *string;
 va_list list;
 va_start(list, n);
-for (i = 0; i < n; i++)
+for (i = 0; i < (n - 1); i++)
 {
-j = va_arg(list, char *);
-if (j != NULL)
-{
-printf("%s", j);
-}
-else
+string = va_arg(list, char *);
+if (string == NULL)
 {
 printf("(nil)");
 }
-if ( separator != NULL)
+else
+{
+printf("%s", string);
+}
+if (i != (n - 1))
+{
+if (separator != NULL)
 {
 printf("%s", separator);
 }
