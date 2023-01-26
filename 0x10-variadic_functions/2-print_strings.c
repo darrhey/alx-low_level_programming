@@ -35,7 +35,7 @@ printf("%s", separator);
 }
 }
 }
-printf("%s", string);
+printf("%s", va_arg(list, char *);
 va_end(list);
 printf("\n");
 }
