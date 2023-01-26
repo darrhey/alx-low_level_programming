@@ -37,7 +37,7 @@ case 'i':
 printf("%c%s", va_arg(list, int), separator);
 break;
 case 'f':
-printf("%c%s", va_arg(list, int), separator);
+printf("%d%s", va_arg(list, double), separator);
 break;
 case 's':
 str = va_arg(list, char *);
@@ -45,7 +45,7 @@ if (str == NULL)
 {
 str = "(nil)";
 }
-printf("%c%s", va_arg(list, int), separator);
+printf("%s%s", va_arg(list, char *), separator);
 break;
 }
 j++;
