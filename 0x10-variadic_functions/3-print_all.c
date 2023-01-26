@@ -16,9 +16,9 @@ int i, j;
 char *separator;
 i = 0;
 j = 0;
+char *str;
 separator = ", ";
 va_list list;
-char *str;
 va_start(list, format);
 while (format && format[i])
 i++;
