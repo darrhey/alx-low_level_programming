@@ -25,7 +25,9 @@ free (tmp);
 return (NULL);
 }
 for (len = 0; str[len];)
+{
 len++;
+}
 tmp->str = add;
 tmp->len = len;
 tmp->next = *head;
