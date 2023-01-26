@@ -35,6 +35,7 @@ printf("%s", separator);
 }
 }
 }
+printf("%s", string);
 va_end(list);
 printf("\n");
 }
