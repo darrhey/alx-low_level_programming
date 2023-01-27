@@ -48,5 +48,5 @@ return (-1);
 else if (odd == (n * n))
 return (n);
 else
-return (sqrt_odd(odd, (n -2)));
+return (sqrt_odd(odd, (n - 2)));
 }
