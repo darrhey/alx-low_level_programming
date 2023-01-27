@@ -1,5 +1,5 @@
 #include "main.h"
-int sqrt_odd(int odd, int n);
+int prime_num(int i, int j);
 
 /**
  * is_prime_number - checks for prime number
