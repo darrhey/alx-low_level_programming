@@ -31,10 +31,16 @@ return (-1);
 }
 else
 {
-return (sqrt_odd(n, n-2));
+return (sqrt_odd(n, (n - 2)));
 }
 }
 
+/**
+ * sqrt_odd - handles odd and prime numbers
+ * @odd: odd or prime number to be checked
+ * @n: number to be checked
+ * Return: square root of n
+ */
 int sqrt_odd(int odd, int n)
 {
 if (n < 0)
@@ -42,5 +48,5 @@ return (-1);
 else if (odd == (n * n))
 return (n);
 else
-return (sqrt_odd(odd, n -2));
+return (sqrt_odd(odd, (n -2)));
 }
