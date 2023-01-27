@@ -18,8 +18,8 @@ return (prime_num(n, (n - 1)));
 
 /**
  * prime_num - confirm prime numbers
- * @odd: number to be checked
- * @n: number to check with
+ * @i: number to be checked
+ * @j: number to check with
  * Return: 1 if prime number 0 if otherwise
  */
 int prime_num(int i, int j)
