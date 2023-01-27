@@ -1,4 +1,6 @@
 #include "main.h"
+int sqrt_odd(int odd, int n);
+
 /**
  * _sqrt_recursion - returns the natural square root of n
  * @n: int to find its square root
@@ -19,18 +21,26 @@ return (n);
 if (!(n % 2))
 {
 if ((n / 2) == 2 || (n == 2))
-{
 return (2);
-}
 sqrt = _sqrt_recursion(n / 2);
 if ((n / sqrt) == sqrt)
-{
 return (sqrt);
-}
 else if (sqrt > 1)
-{
 return (sqrt * 2);
-}
 return (-1);
 }
+else
+{
+return (sqrt_odd(n, n-2));
+}
+}
+
+int sqrt_odd(int odd, int n)
+{
+if (n < 0)
+return (-1);
+else if (odd == (n * n))
+return (n);
+else
+return (sqrt_odd(odd, n -2));
 }
