@@ -12,7 +12,7 @@ size_t print_listint_safe(listint_t **head)
 {
 int a;
 a = 0;
-listint_t *i, *j;
+const listint_t *i, *j;
 i = head;
 j = head;
 size_t b;
@@ -26,23 +26,23 @@ j = j->next;
 if (i == j)
 {
 i = i->next;
-b = 1;
+a = 1;
 break;
 }
 }
-if (!b)
+if (!a)
 {
 while (head)
 {
-a++;
+b++;
 printf("[%p] %d\n", (void *)head, head->n);
 head = head->next;
 }
-return (a);
+return (b);
 }
 while (head)
 {
-a++;
+b++;
 if (head == i)
 {
 printf("[%p] %d\n", (void *)head, head->n);
