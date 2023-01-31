@@ -2,7 +2,7 @@
 #include <string.h>
 #include "lists.h"
 
-listint_t *new(cconst int n);
+listint_t *new(const int n);
 
 /**
  * add_nodeint - adds a new node at the beginning of a listint_t
