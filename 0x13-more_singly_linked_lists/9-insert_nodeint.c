@@ -18,13 +18,13 @@ tmp = malloc(sizeof(listint_t));
 if (!tmp)
 return (NULL);
 tmp->n = n;
-if (index == 0)
+if (idx == 0)
 {
 tmp->next = node;
 *head = tmp;
 return (*head);
 }
-while (index > 1)
+while (idx > 1)
 {
 nodes = nodes->next;
 index--;
