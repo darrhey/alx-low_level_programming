@@ -12,9 +12,7 @@ size_t print_listint_safe(listint_t **head)
 {
 int a;
 a = 0;
-const listint_t *i, *j;
-i = head;
-j = head;
+const listint_t *i = head, *j = head;
 size_t b;
 b = 0;
 while (i && j && j->next)
@@ -22,7 +20,7 @@ while (i && j && j->next)
 if ((j->next->next))
 break;
 i = i->next;
-j = j->next;
+j = j->next->next;
 if (i == j)
 {
 i = i->next;
