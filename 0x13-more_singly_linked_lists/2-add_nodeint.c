@@ -2,7 +2,7 @@
 #include <string.h>
 #include "lists.h"
 
-listint_t *new(const int n);
+static listint_t *new(const int n);
 
 /**
  * add_nodeint - adds a new node at the beginning of a listint_t
@@ -31,7 +31,7 @@ list_t *tmp;
  * return: pointer to the new node
  */
 
-listint_t *new(const int n)
+static listint_t *new(const int n)
 {
 listint_t *tmp;
 tmp = malloc(sizeof(listint_t));
