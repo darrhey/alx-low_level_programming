@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include "lists.h"
 
-static listint_t *new(const int n);
+static listint_t *new(const int j);
+
 /**
  * insert_nodeint_at_index - inserts a new node at a position
  * @head: pointer to a listint_t list
@@ -50,13 +51,13 @@ return (NULL);
  * return: pointer to the new node
  */
 
-static listint_t *new(const int n)
+static listint_t *new(const int j)
 {
 listint_t *tmp;
 tmp = malloc(sizeof(listint_t));
 if (!tmp)
 return (NULL);
-tmp->n = n;
+tmp->n = j;
 tmp->next = NULL;
 return (tmp);
 }
