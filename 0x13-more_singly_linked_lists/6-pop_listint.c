@@ -14,8 +14,8 @@ int n;
 listint_t *tmp;
 if (!(head) || !head)
 return (0);
-tmp = *head->next;
-n = *head->n;
+tmp = (*head)->next;
+n = (*head)->n;
 free(*head);
 *head = tmp;
 return (n);
