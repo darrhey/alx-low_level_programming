@@ -17,7 +17,7 @@ return (0);
 }
 while (h)
 {
-printf("%d\n", h->n);
+printf("%d\n", h->len);
 h = h->next;
 nodes++;
 }
