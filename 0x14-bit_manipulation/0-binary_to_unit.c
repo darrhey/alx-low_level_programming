@@ -8,24 +8,22 @@
  */
 unsigned int binary_to_unit(const char *b)
 {
-unsigned int i, j;
+unsigned int a, i, j;
+j = 1;
 if (!b || !*b)
 return (0);
-i = j = 0;
-while (b[j])
+i = 0;
+while (b[i])
 {
-if (b[j] > 49)
+if (b[i] > 49)
 return (0);
-else if (b[j] == 49)
-{
-i <<= 1;
-i += 1;
+i++;
 }
-else
-{
-i <<=1;
-}
-j++;
-}
-return (i);
+i--;
+a = 0;
+do {
+a += (b[i] - '0') * j;
+j *= 2;
+} while (i--);
+return (a);
 }
