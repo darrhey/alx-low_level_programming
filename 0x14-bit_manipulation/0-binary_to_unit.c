@@ -11,8 +11,7 @@ unsigned int binary_to_unit(const char *b)
 unsigned int i, j;
 if (!b || !*b)
 return (0);
-j = 0;
-i = j;
+i = j = 0;
 while (b[j])
 {
 if (b[j] > 49)
