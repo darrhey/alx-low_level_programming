@@ -15,7 +15,7 @@ xor = n ^ m;
 while (xor)
 {
 i += xor & 1;
-xor >> 1;
+xor >>= 1;
 }
 return (i);
 }
