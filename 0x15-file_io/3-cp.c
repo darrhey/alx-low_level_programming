@@ -6,8 +6,8 @@
 #include <fcntl.h>
 #include "main.h"
 
-ssize_t read_textfile(char *filename, char **p, int fd);
-void write_copy(char *filename, char *p, int size, int fd);
+static ssize_t read_textfile(char *filename, char **p, int fd);
+static void write_copy(char *filename, char *p, int size, int fd);
 
 /** main - copies content of a file into another
  * @argc: argument count
@@ -59,7 +59,7 @@ return (0);
  * @size: size of buffer
  * Return: nothing
  */
-void write_copy(char *filename, char *p, int size, int fd)
+static void write_copy(char *filename, char *p, int size, int fd)
 {
 if (fd < 0 || !p)
 {
@@ -82,7 +82,7 @@ exit(99);
  * @fd: file descriptor
  * Return: size of buffer
  */
-ssize_t read_textfile(char *filename, char **p, int fd)
+static ssize_t read_textfile(char *filename, char **p, int fd)
 {
 int rd_i;
 if (fd < 0)
