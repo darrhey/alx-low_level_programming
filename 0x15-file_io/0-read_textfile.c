@@ -9,7 +9,7 @@
 /**
  * read_textfile - reads a text cfile and prints to the stdout
  * @filename: to be printed
- * @filename: maximum char to be printed
+ * @letters: maximum char to be printed
  * Return: number of char printed
  */
 ssize_t read_textfile(const char *filename, size_t letters)
