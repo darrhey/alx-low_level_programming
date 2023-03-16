@@ -1,0 +1,31 @@
+/**
+ * print_dog - prints a struct dog
+ * @d - struct type
+ * Description - print (nil) if an element is NULL
+ **/
+
+void print_dog(struct dog *d)
+{
+  if (*d != NULL)
+    {
+  if ((*d).name == NULL)
+    {
+      return ("(nil)");
+    }
+  if ((*d).age == NUL)
+    {
+      (*d).age = "(nil)";
+    }
+  if ((*d).owner == NULL)
+    {
+      (*d).owner = "(nil)";
+    }
+  printf("Name: %c\n",d->name);
+    printf("Age: %f\n",d->age);
+      printf("Owner: %c\n",d->owner);
+}
+  else
+    {
+      return (NULL);
+    }
+}

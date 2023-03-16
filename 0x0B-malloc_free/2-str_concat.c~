@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "main.h"
+/**
+ * *str_concat - concatenates two strings
+ * @s1: destination of string
+ * @s2: source of string
+ * Return: s1
+*/
+
+cat(char *s1, char *s2)
+{
+char *p;
+int i;
+int j;
+if (str == NULL)
+{
+return (NULL);
+}
+i = strlen(str) + 1;
+p = malloc((i) * sizeof(char));
+j = 0;
+while (j < i)
+{
+if (p == NULL)
+{
+return (NULL);
+}
+p[j] = str[j];
+j++;
+}
+return (p);
+}

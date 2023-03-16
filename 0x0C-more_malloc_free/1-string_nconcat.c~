@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "main.h"
+/**
+ * *string_nconcat - concatenates two strings
+ * @s1: destination for concatenation
+ * @s2: source of string
+ * @n: unsigned integer type
+ * Return: pointer to new allocated memory
+ */
+
+char *string_nconcat(char *s1, char *s2, unsigned int n)
+{
+  char *dest;
+  int i;
+char *p;
+p = malloc(s2 + n);
+ if (s1 == NULL)
+   {
+     s1 = "";
+   }
+ if (s2 == NULL)
+   {
+     s2 = "";
+   }
+ 
+ for (i = 0; i < n; i++)
+   {
+     strncat(dest, s1[i]);
+   }
+ if (p == NULL)
+{
+exit (98);
+}
+return (p);
+}
