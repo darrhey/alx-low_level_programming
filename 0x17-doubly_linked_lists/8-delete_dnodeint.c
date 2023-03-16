@@ -5,7 +5,7 @@
  * add_dnodeint - delete a new node at index of a doubly linked list
  * @head: head of the list
  * @index: index of the node to be deleted
- * Return: The address of the new element or NULL if failed
+ * Return: 1 for success and -1 if failed
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
@@ -50,6 +50,10 @@ present = present->next;
 present->prev = temp->prev;
 *head = present;
 }
+else
+{
+*head = NULL;
+}
 free(temp);
 return (1);
 }
@@ -84,8 +88,11 @@ return (NULL);
  */
 size_t dlistint_len(const dlistint_t *h)
 {
-size_t i;
-for (i = 0; h; i++)
+int i = 0;
+while (h != NULL)
+{
+++i;
 h = h->next;
+}
 return (i);
 }
