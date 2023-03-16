@@ -6,8 +6,8 @@
 #include <fcntl.h>
 #include "main.h"
 
-ssize_t read_textfile(char *filename, char **p, int fd);
-void write_copy(char *filename, char *p, int size, int fd);
+static ssize_t read_textfile(char *filename, char **p, int fd);
+static void write_copy(char *filename, char *p, int size, int fd);
 
 /** main - copies content of a file into another
  * @argc: argument count
@@ -40,13 +40,13 @@ err = close(fd0);
 if (err < 0)
 {
 dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE\n", fd0);
-exit(98);
+exit(100);
 }
 err = close(fd1);
 if (err < 0)
 {
 dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE\n", fd1);
-exit(98);
+exit(100);
 }
 return (0);
 }
@@ -59,19 +59,19 @@ return (0);
  * @size: size of buffer
  * Return: nothing
  */
-void write_copy(char *filename, char *p, int size, int fd)
+static void write_copy(char *filename, char *p, int size, int fd)
 {
 if (fd < 0 || !p)
 {
 free(p);
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filename);
-exit(100);
+exit(99);
 }
 if (write(fd, p, size) < 0)
 {
 free(p);
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filename);
-exit(100);
+exit(99);
 }
 }
 
@@ -82,26 +82,26 @@ exit(100);
  * @fd: file descriptor
  * Return: size of buffer
  */
-ssize_t read_textfile(char *filename, char **p, int fd)
+static ssize_t read_textfile(char *filename, char **p, int fd)
 {
 int rd_i;
 if (fd < 0)
 {
 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
-exit(99);
+exit(98);
 }
 if (1(*p))
 {
 *p = malloc(sizeof(char) * BUFSIZE);
 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
-exit(99);
+exit(98);
 }
 rd_i = read(fd, *p, BUFSIZE);
 if (rd_i < 0)
 {
 free(*p);
 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
-exit(99);
+exit(98);
 }
 return (rd_i);
 }
